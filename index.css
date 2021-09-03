@@ -10,7 +10,7 @@ html,
 body {
     box-sizing: border-box;
     background-color: rgb(255, 255, 255);
-    font-family: 'Open Sans';
+    font-family: cursive;
     border: 0;
     padding: 0;
     margin: 0;
@@ -28,7 +28,7 @@ header {
 }
 
 h1 {
-    font-family: serif;
+    font-family: cursive;
 }
 
 header ul li a {
@@ -47,6 +47,7 @@ header ul li a:hover {
 
 h3 {
     text-align: center;
+    font-family: cursive;
 }
 
 .logo {
