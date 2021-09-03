@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -18,14 +19,7 @@ body {
     overflow-x: hidden;
 }
 
-main {
-    width: 100;
-    height: 100%;
-    /* background: linear-gradient(90deg, rgba(36, 5, 0, 1) 0%, rgba(226, 103, 16, 1) 39%, rgba(255, 222, 0, 0.9948354341736695) 92%); */
-    background: white;
-}
-
-#nav-header {
+header {
     list-style: none;
     display: flex;
     width: 100%;
@@ -33,17 +27,26 @@ main {
     background-color: rgb(23, 48, 95);
 }
 
-#nav-header ul li a {
+h1 {
+    font-family: serif;
+}
+
+header ul li a {
     position: relative;
     color: #fff;
     text-decoration: none;
     cursor: pointer;
     padding: 25px;
     display: inline-block;
+    font-family: cursive;
 }
 
-#nav-header ul li a:hover {
+header ul li a:hover {
     background-color: rgb(30, 59, 139);
+}
+
+h3 {
+    text-align: center;
 }
 
 .logo {
@@ -55,7 +58,7 @@ main {
     font-size: 25px;
 }
 
-.menu {
+.header-list {
     list-style-type: none;
     display: flex;
     align-items: center;
@@ -72,11 +75,14 @@ ul li {
     display: inline;
 }
 
-#welcome-section {
+
+/*CONTEÚDO PRINCIPAL*/
+
+#bem-vindo {
     background-image: url("https://images.unsplash.com/photo-1598978483528-fd57466ab0ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80");
     background-size: cover;
     background-position: center center;
-    color: red;
+    color: rgb(230, 5, 5);
     height: 400px;
     position: relative;
     display: flex;
@@ -88,9 +94,11 @@ ul li {
 
 .box-description {
     display: flex;
+    align-items: center;
     width: 100%;
-    height: 350px;
-    /* background-color: moccasin; */
+    height: 450px;
+    background-color: #d8dcda;
+    margin-top: 15px;
 }
 
 .box-img {
@@ -109,33 +117,128 @@ ul li {
 .box-content {
     width: 50%;
     font-size: 12px;
+    margin-left: 75px;
+    font-family: monospace;
 }
 
-h3 {
+.box-content h1 {
+    margin-bottom: 50px;
     text-align: center;
+    font-family: monospace;
 }
 
-#nav-footer {
-    bottom: 0;
-    padding: 5px 0;
+
+/*CONTEÚDO - SKILLS*/
+
+.sessao-skills {
+    padding: 5px 10px;
     width: 100%;
-    height: 90px;
-    background-color: rgb(23, 48, 95);
+    height: 450px;
+    /* border: 1px solid black; */
+    /* overflow: hidden; */
+}
+
+.header-session {
+    width: 600px;
+    height: 150px;
+    margin-left: 33%;
+    color: rgb(43, 3, 80);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    /* border: 1px solid #000; */
+}
+
+.header-session h3 {
+    text-align: center;
+}
+
+#header-underline {
+    width: 200px;
+    align-self: center;
+    border: 1px solid rgb(43, 3, 80);
+}
+
+.flex-skills {
+    width: 94%;
+    padding: 3% 3%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content-skill {
+    background-color: rgb(225, 241, 238);
+    border: 1px solid rgb(131, 5, 5);
+    width: 300px;
+    height: 250px;
+    border: none;
+}
+
+.logo-skill {
+    width: 100%;
+    height: 60px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo-skill p {
+    text-align: center;
+    font-family: fantasy;
+}
+
+#skills-img {
+    width: 60px;
+    height: 60px;
+    margin-top: 15px;
+}
+
+.descrição {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.descrição {
+    text-align: center;
+    font-family: ui-monospace;
+}
+
+
+/*CONTEÚDO DO FOOTER*/
+
+footer p {
+    text-align: center;
+    font-family: cursive;
+}
+
+#Copyright {
+    /* text-align: center; */
+    margin-left: 25px;
+    font-family: cursive;
+}
+
+footer {
+    bottom: 0;
+    padding: 5px 0px;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(23, 48, 95);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     color: white;
 }
 
-#nav-footer ul li a {
+footer ul li a {
     color: #fff;
-    padding: 15px 10px;
+    padding: 15px 15px;
     display: inline-block;
     text-decoration: none;
+    font-family: cursive;
 }
 
-#nav-footer a:hover {
+footer a:hover {
     background-color: rgb(30, 59, 139);
 }
